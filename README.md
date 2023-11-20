@@ -1,11 +1,23 @@
 # Neovim config files
 
-This repo contains my Neovim config files.
+Requires [ripgrep](https://github.com/BurntSushi/ripgrep). Ripgrep can be found in both the official Debian and Arch repos as `ripgrep`.
 
-The only thing to mention is the 3 profile setup. This was a convenient way to allow for conditionals.
+## Profiles
 
-The 'default' profile is a profile with no LSP. Ideal for situations where Vim is a text editor, but not an IDE.
+The 'default' profile is a profile with no LSP. This profile is ideal for situations where Neovim is a text editor, but not an IDE.
 
-The 'LSPv2' profile is the main profile with an LSP. Ideal as an IDE.
+The 'lsp-v2' profile is the optimal profile with an LSP. This profile is ideal for an IDE.
 
-An example of a situation to use the 'LSPv1' profile is on a Debian 12 machine. Since it (as of writing) still uses nvim 0.7.2, that Debian machine would be unable to use the 'LSPv2' profile. Solutions include building neovim from source and reinstalling, but another solution was to create a profile that would bring the LSP functions to the nvim 0.7.2 machine. That profile is 'LSPv1'.
+The 'lsp-v1' profile was created only for machines that couldn't run the 'lsp-v2' profile. One example is a stock Debian 12 install. As of writing, Debian stable still uses nvim 0.7.2, which is too old to run some of the up-to-date plugins in the 'lsp-v2' profile. One solution was to create a profile that would bring the LSP functions to the nvim 0.7.2 machine. That profile was 'lsp-v1'.
+
+However, another solution is to build Neovim from source and reinstall it. Since this is the preferred solution, 'lsp-v1' is rarely used.
+
+## Installation
+
+Once the repo is cloned and a profile has been chosen, follow the appropriate next step:
+
+For the 'default' profile:
+- remove 'after/plugin/lsp.lua'
+
+For the LSP profiles:
+- 'init.lua' should be changed to point to the preferred profile ('lsp-v2')
