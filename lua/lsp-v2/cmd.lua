@@ -23,7 +23,7 @@ Plug 'mbbill/undotree'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'ThePrimeagen/harpoon'
+Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
@@ -31,7 +31,7 @@ Plug 'vimwiki/vimwiki'
 
 " LSP Support
 Plug 'neovim/nvim-lspconfig'             " Required
-Plug 'williamboman/mason.nvim',          " Optional
+Plug 'williamboman/mason.nvim'           " Optional
 Plug 'williamboman/mason-lspconfig.nvim' " Optional
 
 " Autocompletion
