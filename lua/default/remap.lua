@@ -20,9 +20,12 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- using J keeps your cursor where it was
 vim.keymap.set("n", "J", "mzJ`z")
 
--- the cursor stays at 'zz' using ctrl+u and ctrl+d
+-- the cursor stays at 'zz' when using ctrl+u and ctrl+d
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- the cursor stays at 'zz' when using G
+vim.keymap.set("n", "G", "Gzz")
 
 -- the cursor stays at 'zz' when using search
 vim.keymap.set("n", "n", "nzzzv")
