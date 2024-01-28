@@ -66,3 +66,13 @@ vim.o.compatible = false
 vim.cmd('set nocompatible')
 vim.o.syntax = true
 vim.cmd('syntax on')
+
+-- fixing unsupported characters in vim-airline
+vim.cmd ([[
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.colnr = ' C:'
+let g:airline_symbols.linenr = ' L:'
+let g:airline_symbols.maxlinenr = '☰ '
+]])
