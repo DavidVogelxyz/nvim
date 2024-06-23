@@ -38,8 +38,8 @@ vim.o.scrolloff = 14
 vim.o.signcolumn = "no"
 
 -- splits open at the bottom and right, which is non-retarded, unlike vim defaults.
-vim.o.splitbelow = 1
-vim.o.splitright = 1
+vim.o.splitbelow = true
+vim.o.splitright = true
 
 -- set title to be file name, rather than 'nvim'
 vim.o.title = true
@@ -64,7 +64,7 @@ vim.o.undofile = true
 vim.cmd('filetype plugin on')
 vim.o.compatible = false
 vim.cmd('set nocompatible')
-vim.o.syntax = true
+vim.o.syntax = on
 vim.cmd('syntax on')
 
 -- fixing unsupported characters in vim-airline
