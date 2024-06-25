@@ -21,7 +21,7 @@ Plug 'lunarvim/synthwave84.nvim'
 Plug 'm4xshen/autoclose.nvim'
 Plug 'mbbill/undotree'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'ThePrimeagen/harpoon', { 'branch': 'harpoon2' }
 Plug 'tpope/vim-fugitive'
