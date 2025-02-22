@@ -41,8 +41,8 @@ vim.o.wildmode = "full"
 vim.cmd('filetype plugin on')
 vim.o.compatible = false -- enable file type detection
 vim.cmd('set nocompatible') -- this appears to be redundant
-vim.o.syntax = on -- enable syntax highlighting -- Lua LSP throws error about "on", but "true" breaks in Neovim v0.10
-vim.cmd('syntax on') -- this appears to be redundant
+--vim.o.syntax = on -- enable syntax highlighting -- Lua LSP throws error about "on", but "true" breaks in Neovim v0.10
+vim.cmd('syntax on') -- enable syntax highlighting -- this appears to be redundant; but, avoids the errors of `vim.o.syntax = on`
 
 -- fixing unsupported characters in vim-airline
 vim.cmd ([[
@@ -51,5 +51,5 @@ vim.cmd ([[
     endif
     let g:airline_symbols.colnr = ' C:'
     let g:airline_symbols.linenr = ' L:'
-    let g:airline_symbols.maxlinenr = '☰ '
+    let g:airline_symbols.maxlinenr = ' '
 ]])
