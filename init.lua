@@ -1,1 +1,1 @@
-require("default")
+require("lsp-v2")
