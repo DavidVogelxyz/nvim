@@ -25,6 +25,19 @@ vim.cmd ([[
     Plug 'tpope/vim-surround'
     Plug 'vim-airline/vim-airline'
     Plug 'vimwiki/vimwiki'
+
+    " LSP Support
+    Plug 'neovim/nvim-lspconfig'             " Required
+    Plug 'williamboman/mason.nvim'           " Optional
+    Plug 'williamboman/mason-lspconfig.nvim' " Optional
+
+    " Autocompletion
+    Plug 'hrsh7th/nvim-cmp'     " Required
+    Plug 'hrsh7th/cmp-nvim-lsp' " Required
+    Plug 'L3MON4D3/LuaSnip'     " Required
+
+    Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
+
     call plug#end()
 ]])
 
