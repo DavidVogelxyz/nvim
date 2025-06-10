@@ -23,9 +23,9 @@ return {
         end)
 
         -- opens the quick menu - new keybind
-        vim.keymap.set("n", "<C-d>", function()
-            harpoon.ui:toggle_quick_menu(harpoon:list())
-        end)
+        --vim.keymap.set("n", "<C-d>", function()
+        --    harpoon.ui:toggle_quick_menu(harpoon:list())
+        --end)
 
         -- go to file at postition 1
         vim.keymap.set("n", "<C-j>", function()

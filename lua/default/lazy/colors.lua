@@ -4,8 +4,8 @@ function ColorMyPencils(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" }) -- `Normal`is the main window
     vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" }) -- `NormalNC` is the main window when a float appears
-    --vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" }) -- `NormalFloat` is a floating window (ex. Lazy menu, Harpoon menu)
-    --vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" }) -- `TelescopeNormal` is the main Telescope window (techinically, a floating window)
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" }) -- `NormalFloat` is a floating window (ex. Lazy menu, Harpoon menu)
+    vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" }) -- `TelescopeNormal` is the main Telescope window (techinically, a floating window)
     --vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
     --vim.api.nvim_set_hl(0, "TelescopeSelection", { bg = "none" })
     --vim.api.nvim_set_hl(0, "TelescopeSelectionCaret", { bg = "none" })
