@@ -44,6 +44,7 @@ return {
                 "python",
                 "query",
                 "rust",
+                "sh",
                 "typescript",
                 "vim",
                 "vimdoc",
