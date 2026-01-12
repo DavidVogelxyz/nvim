@@ -31,7 +31,7 @@ return {
             pattern = {
                 "c",
                 "diff",
-                "git_config",
+                "gitconfig",
                 "git_rebase",
                 "gitcommit",
                 "gitignore",
