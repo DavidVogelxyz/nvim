@@ -32,7 +32,7 @@ return {
                 "bash",
                 "c",
                 "diff",
-                "git_config",
+                "gitconfig",
                 "git_rebase",
                 "gitcommit",
                 "gitignore",
