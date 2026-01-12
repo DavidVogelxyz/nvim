@@ -29,7 +29,6 @@ return {
 
         vim.api.nvim_create_autocmd('FileType',{
             pattern = {
-                "bash",
                 "c",
                 "diff",
                 "git_config",
@@ -44,6 +43,7 @@ return {
                 "python",
                 "query",
                 "rust",
+                "sh",
                 "typescript",
                 "vim",
                 "vimdoc",
