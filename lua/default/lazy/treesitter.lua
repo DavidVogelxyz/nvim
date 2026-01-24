@@ -1,11 +1,11 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     lazy = false,
-    build = ":TSUpdate",
-    config = function()
+    branch = "main",
+    build = { ":TSUpdate" },
+    init = function()
         local treesitter = require("nvim-treesitter")
-        treesitter.setup()
-        treesitter.install {
+        local parser_installed = {
             "bash",
             "c",
             "diff",
@@ -27,7 +27,11 @@ return {
             "vimdoc",
         }
 
-        vim.api.nvim_create_autocmd('FileType',{
+        treesitter.setup()
+        treesitter.install(parser_installed)
+        --treesitter.update()
+
+        vim.api.nvim_create_autocmd("FileType", {
             pattern = {
                 "c",
                 "diff",
