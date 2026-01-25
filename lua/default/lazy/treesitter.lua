@@ -25,6 +25,7 @@ return {
             "typescript",
             "vim",
             "vimdoc",
+            "yaml"
         }
 
         treesitter.setup()
@@ -51,6 +52,7 @@ return {
                 "typescript",
                 "vim",
                 "vimdoc",
+                "yaml"
             },
             callback = function()
                 vim.treesitter.start()
