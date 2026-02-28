@@ -4,6 +4,7 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader><CR>", function() vim.cmd("so") end) -- lets you SHOUTOUT a file real easy
 vim.keymap.set("n", "<leader><leader>", ":w<CR>", { noremap = true, silent = true }) -- map "leader+leader" to save current file in normal mode
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- map "leader+pv" to open Ex
+--vim.keymap.set("n", "<leader>pv", ":lua Snacks.picker.explorer()<CR>") -- map "leader+pv" to open the "Snacks explorer"
 vim.keymap.set("n", "<leader>s", [[:%s//gc<Left><Left><Left>]]) -- map replace all to "leader+s"
 vim.keymap.set("n", "S", [[:%s//gc<Left><Left><Left>]]) -- map replace all to "S"
 
