@@ -1,7 +1,11 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     lazy = false,
-    branch = "main",
+    -- on 2026 Apr 1, `nvim-treesitter` dropped support for Neovim v0.11
+    -- to fix this, `nvim-treesitter` is now pinned to "last good commit"
+    --branch = "main",
+    pin = true,
+    version = "90cd6580e720caedacb91fdd587b747a6e77d61f",
     build = { ":TSUpdate" },
     init = function()
         local treesitter = require("nvim-treesitter")
