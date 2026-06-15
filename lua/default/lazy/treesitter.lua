@@ -29,6 +29,7 @@ return {
             "typescript",
             "vim",
             "vimdoc",
+            "xml",
             "yaml",
             "zsh"
         }
@@ -57,6 +58,7 @@ return {
                 "typescript",
                 "vim",
                 "vimdoc",
+                "xml",
                 "yaml",
                 "zsh"
             },
